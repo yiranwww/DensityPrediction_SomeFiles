@@ -1,11 +1,11 @@
 figure;
 
-%% 设置多条曲线时，自动颜色顺序和图标顺序，必须放最前
+%% 设置多条曲线时，自动颜色顺序和图标顺序，放最前
 set(gca,'NextPlot','replacechildren');
 % set(gca,'LineStyleOrder','-^|-*|-o');
 % set(gca,'ColorOrder',[0,0,0; 1,0,0]);
 
-%% 画图的内容
+%% 画图的内容  注意title中可以用latex语法
 temp = 0:0.1:5;
 plot(temp,sin(temp),temp,cos(temp),temp,cos(sin(temp)));
 %%% 标注
